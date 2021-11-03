@@ -15,10 +15,10 @@ namespace SEP3_WebServerClient
             TcpClient client = new TcpClient("localhost", 1235);
             NetworkStream networkStream = client.GetStream();
 
-            Spike spikeToPut = new Spike {Snor = "SnorSnor"};
+            Spike spikeToPut = new Spike {SpikeName = "SnorSnor"};
 
            
-            Request request = new Request(RequestType.PUT, spikeToPut.GetType().Name , spikeToPut);
+            Request request = new Request(RequestType.POST, spikeToPut.GetType().Name , spikeToPut);
             
             Console.WriteLine(request.ToString());
             

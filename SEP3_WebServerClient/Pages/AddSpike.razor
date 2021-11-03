@@ -11,7 +11,7 @@
 
 <EditForm Model="@_newSpike" OnValidSubmit="@AddNewSpike">
     <DataAnnotationsValidator/> <ValidationSummary/>
-    <div class="form-group"> Spike:<br/> <InputText @bind-Value="_newSpike.Snor"/> </div>
+    <div class="form-group"> Spike:<br/> <InputText @bind-Value="_newSpike.SpikeName"/> </div>
 
     <p class="actions">
         <button class="btn btn-outline-dark" type="submit">Add</button>

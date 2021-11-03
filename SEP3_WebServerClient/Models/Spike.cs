@@ -2,7 +2,7 @@
 {
     public class Spike
     {
-        public string Snor { get; set; }
+        public string SpikeName { get; set; }
         
     }
 }
