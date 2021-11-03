@@ -3,5 +3,7 @@
     public interface ISocketClient : IServerCommunication
     {
         void CreateClientHandler();
+        
+        
     }
 }

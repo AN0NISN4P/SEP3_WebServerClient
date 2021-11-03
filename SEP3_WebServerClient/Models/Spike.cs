@@ -3,5 +3,6 @@
     public class Spike
     {
         public string snor { get; set; }
+        
     }
 }
