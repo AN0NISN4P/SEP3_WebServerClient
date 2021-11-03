@@ -1,11 +1,14 @@
-﻿using SEP3_WebServerClient.Models;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using SEP3_WebServerClient.Models;
 
 namespace SEP3_WebServerClient.ServerCommunication
 {
     public interface IServerCommunication
     {
-        void SendToServer(Spike spike);
+        Task SendToServer(Spike spike);
 
-        void GetFromServer();
+        Task<IList<Spike>> GetFromServer();
     }
 }

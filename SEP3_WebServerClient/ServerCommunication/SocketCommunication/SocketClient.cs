@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net.Sockets;
+using System.Threading.Tasks;
 using SEP3_WebServerClient.Models;
 
 namespace SEP3_WebServerClient.ServerCommunication.SocketCommunication
@@ -12,16 +14,14 @@ namespace SEP3_WebServerClient.ServerCommunication.SocketCommunication
         {
         }
         
-        public void SendToServer(Spike spike)
+        public Task SendToServer(Spike spike)
         {
             throw new System.NotImplementedException();
         }
 
-        public void GetFromServer()
+        public Task<IList<Spike>> GetFromServer()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
-
-        
     }
 }
