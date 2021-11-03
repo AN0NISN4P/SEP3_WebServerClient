@@ -8,7 +8,7 @@ namespace SEP3_WebServerClient.Data
 {
     public class SpikeHandler : ISpikeHandler
     {
-        public IServerCommunication ServerCommunication;
+        private IServerCommunication _serverCommunication;
 
         public SpikeHandler()
         {
@@ -19,12 +19,12 @@ namespace SEP3_WebServerClient.Data
         
         public async Task NewSpike(Spike newSpike)
         {
-            await ServerCommunication.SendToServer(newSpike);
+            await _serverCommunication.SendToServer(newSpike);
         }
 
         public async Task<IList<Spike>> GetSpikes()
         {
-            return await ServerCommunication.GetFromServer();
+            return await _serverCommunication.GetFromServer();
         }
     }
 }
