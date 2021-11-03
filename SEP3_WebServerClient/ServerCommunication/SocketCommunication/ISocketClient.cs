@@ -1,4 +1,4 @@
-﻿namespace SEP3_WebServerClient.ServerCommunication.SocketCommunication
+﻿namespace ServerCommunication.SocketCommunication
 {
     public interface ISocketClient : IServerCommunication
     {

@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using SEP3_WebServerClient.Models;
-using SEP3_WebServerClient.ServerCommunication;
-using SEP3_WebServerClient.ServerCommunication.SocketCommunication;
+using ServerCommunication;
 
 namespace SEP3_WebServerClient.Data
 {

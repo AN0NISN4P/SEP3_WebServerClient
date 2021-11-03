@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using SEP3_WebServerClient.Models;
 
-namespace SEP3_WebServerClient.ServerCommunication
+namespace ServerCommunication
 {
     public interface IServerCommunication
     {

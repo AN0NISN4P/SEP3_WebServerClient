@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net.Sockets;
 using System.Threading.Tasks;
 using SEP3_WebServerClient.Models;
 
-namespace SEP3_WebServerClient.ServerCommunication.SocketCommunication
+namespace ServerCommunication.SocketCommunication
 {
     public class SocketClient : ISocketClient
     {
@@ -23,7 +22,7 @@ namespace SEP3_WebServerClient.ServerCommunication.SocketCommunication
         
         public Task SendToServer(Spike spike)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public Task<IList<Spike>> GetFromServer()
