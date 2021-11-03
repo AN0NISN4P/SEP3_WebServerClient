@@ -20,7 +20,7 @@ namespace ServerCommunication.SocketCommunication
         public void Run()
         {
             //SpikeTest
-            Spike spike = new Spike {snor = "SnorSnor"};
+            Spike spike = new Spike {Snor = "SnorSnor"};
             SendObject(spike);
             ReceiveObject(spike);
             
